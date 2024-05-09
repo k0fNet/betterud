@@ -23,7 +23,7 @@ The library contains two main classes SearchUD and Word. SearchUD has only one f
 Word has arguments .definition, .permalink, .thumbs_up, .author, .word, .defid, .current_vote, .written_on, .example, .thumbs_down:
 
 ```python
-import betterud
+from betterud import *
 
 definitions = SearchUD('word').start()
 print(definitions[0].definition)
@@ -40,7 +40,7 @@ Its usage among young blacks has been parodied [ad nauseam] among clueless subur
 Also, Word has a function .bracketless(). This function is used to remove brackets from object's definition and return object itself.
 
 ```python
-import betterud
+from betterud import *
 
 definitions = SearchUD('word').start()
 print(definitions[0].bracketless().definition)
@@ -56,7 +56,7 @@ Its usage among young blacks has been parodied ad nauseam among clueless suburba
 If SearchUD didn't get any arguments, it'd return definitions for random words from Urban Dictionary:
 
 ```python
-import betterud
+from betterud import *
 
 definitions = SearchUD().start()
 print(definitions[0].word)
@@ -69,7 +69,7 @@ Came
 If SearchUD didn't find a definition, it'd return an empty array:
 
 ```python
-import betterud
+from betterud import *
 
 definitions = SearchUD('iswearitdoesntexiststhere').start()
 print(definitions)
@@ -83,3 +83,7 @@ Output:
 ## Credits
 
 Special thanks to atbuy, the creator of python_urbandict as I used his library to understand basics
+
+## Links
+
+PyPI: https://pypi.org/project/betterUD/
