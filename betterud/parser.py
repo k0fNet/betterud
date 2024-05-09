@@ -35,6 +35,3 @@ class SearchUD:
             self.result.append(Word(*args))
         return self.result
 
-if __name__ == '__main__':
-    definitions = SearchUD('iswearitdoesntexiststhere').start()
-    print(definitions)
